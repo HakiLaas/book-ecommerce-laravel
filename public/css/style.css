@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;  
+    scroll-behavior: smooth;
+    list-style-type: none;
+    transition: 0.3s ease;
+}
+
+body.dark{
+    --black: #fafdff;
+    --white: #0f1a12;
+    --whitegray: #cccccc; 
+    --shadow1: 0 8px 20px 0 hsla(0, 0%, 100%, 0.05);
+    --shadow2: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --green3: #FBEAE0;
+    --whitecream: #005E39;
+    --green2: #52c713;
+}
+
+:root {
+    /* Dark mode color */
+    --white: #fafdff;
+    --black: #0b140e;
+
+    --whitegray: #b9b9b9;
+
+    /* Primary Color */
+    --green1: #005E39;
+    --green2: #52c713;
+    --green3: #005E39;
+    --green4: #005E39;
+    /* Secondary color */
+    --orange1: #FD9852;
+    --orange2: ;
+    --whitecream: #FBEAE0;
+
+    /* Shadow */
+    --shadow1: 0 2px 10px rgba(0, 0, 0, 0.1);
+    --shadow2: 0 4px 6px rgba(255, 255, 255, 0.4);
+    /* Discount */
+    --discount1: ;
+    --discount2: ;
+
+    /* Font Size */
+    --fontsize1: 3.2rem;
+    --fontsize2: 2.7rem;
+    --fontsize3: 2.3rem;
+    --fontsize4: 2.1rem;
+    --fontsize5: 1.9rem;
+    --fontsize6: 1.6rem;
+    --fontsize7: 1.2rem;
+
+    /* Radius */
+    --radius-6: 6px;
+    --radius-12: 12px;
+    --radius-24: 24px;
+    --radius-32: 32px;
+    --radius-circle: 50%;
+
+    /* Font Weight */
+    --weight-thin: 300;
+    --weight-normal: 400;
+    --weight-medium: 500;
+    --weight-semibold: 600;
+    --weight-bold: 700;
+    --weight-extrabold: 800;
+}

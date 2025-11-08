@@ -1,0 +1,512 @@
+#header{
+    /* position: fixed; */
+    width: 100%;
+    position: fixed;
+    background: transparent;
+    z-index: 999;
+    
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    border-bottom: 1px solid #fafdff;    
+}
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar .bx.bx-seacrh{
+    font-size: var(--fontsize7);
+}
+
+
+.navbar ul li a, .navbar ul li .bx, .logo{
+    color: #fafdff;
+    cursor: pointer;
+}
+
+.navbar span{
+    color: #fafdff;
+}
+
+#navbar ul li, #navbar .logo h2{
+    padding: 0 20px;
+}
+
+.navbar.scrolled {
+    background: var(--white);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+.navbar.scrolled ul li a, .navbar.scrolled i, 
+.navbar.scrolled h2, .navbar.scrolled span, .navbar.scrolled ul li i{
+    color: var(--black);
+}
+
+.dropdown {
+    padding: 0;
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 10px;
+    display: none;
+    z-index: 100;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.dropdown-menu h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-menu ul li {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.dropdown-menu ul li:last-child {
+    border-bottom: none;
+}
+
+.checkout-btn {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Perbaikan: Gunakan hover dan focus-within */
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu {
+    display: block;
+    opacity: 1;
+}
+
+.search-bar {
+    display: none;
+    align-items: center;
+    color: var(--black);
+    border: 1px solid var(--whitegray);
+    border-radius: 20px;
+    padding: 5px 100px;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    color: var(--black);
+    background-color: var(--white);
+}
+
+.search-bar input::placeholder{
+    color: var(--whitegray);
+}
+
+.icons{
+    display: flex;
+}
+
+.icons span{
+    justify-content: center;
+    align-items: center;
+}
+
+.icons ul li a .bx, .icons ul li .bx{
+    font-size: var(--fontsize7);
+    padding: 5px;
+}
+
+/* Hero */
+.hero {
+    background: url('https://media.istockphoto.com/id/1594677346/id/foto/solusi-digital-bertemu-alam-eksplorasi-eco-tech-di-fores.jpg?s=612x612&w=0&k=20&c=Ef6fPGrN5UE_VbYkXIVfG82WC7GWwfCRxO0JpB_VbFk=') no-repeat center center/cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    color: #fafdff;
+    text-align: start;
+    padding: 20px;
+    z-index: -1;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 85vh;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+}
+
+.hero-content {
+    padding: 0 100px;
+    z-index: 10;
+}
+
+.hero-content h1{
+    font-size: var(--fontsize1);
+}
+
+.bar-search {
+    display: flex;
+    margin-top: 20px;
+}
+
+.bar-search input {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    border-radius: 10px 0 0 10px;
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.bar-search .search-btn {
+    padding: 10px 20px;
+    background: var(--green2);
+    color: var(--black);
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.popular-searches {
+    margin-top: 20px;
+}
+
+.popular-searches button {
+    background: rgba(255,255,255,0.2);
+    border: none;
+    margin: 5px;
+    color: var(--white);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.hero-content .tag a{
+    border: 1px solid #fafdff;
+    border-radius: 5rem;
+    margin: 0 10px;
+    padding: 8px;
+    color: #fafdff;
+}
+
+.hero-content p{
+    margin-top: 2.5rem;
+}
+
+.next-section{
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+    z-index: 20;
+    background-color: var(--green2);
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.next-section:hover{
+    background-color: var(--green1);
+}
+
+.next-section a i{
+    text-decoration: none;
+    color: var(--white);
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Feature */
+.feature-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.feature-card {
+    display: flex;
+    background: var(--white);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: var(--shadow2);
+    width: 300px;
+    text-align: left;
+    align-items: center;
+}
+
+.feature-card p{
+    color: var(--black);
+    padding: 0 10px;
+}
+
+.feature-card:hover{
+    background: var(--green2);
+    color: var(--white);
+}
+
+.feature-container .icon {
+    color: var(--black);
+    font-size: var(--fontsize5);
+    border-radius: var(--radius-circle);
+}
+
+/* Promotion Product */
+.promotion-product{
+    padding: 35px 0;
+    background: var(--green1);
+}
+
+.promotion-product h1 span{
+    font-size: var(--fontsize5);
+    color: var(--whitecream);
+    padding: 0 140px;
+}
+
+.product-slider {
+    display: flex;
+    align-items: center;
+    position: relative;
+    max-width: 1220px;
+    margin: auto;
+}
+
+.product-container {
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.product-card {
+    min-width: 220px;
+    margin: 10px;
+    padding: 15px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+}
+
+.product-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.favorite-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+    color: gray;
+    cursor: pointer;
+}
+
+.favorite-icon:hover {
+    color: red;
+}
+
+.product-info {
+    margin-top: 10px;
+}
+
+.price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #007b5e;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: red;
+    margin-right: 5px;
+}
+
+.discount {
+    background: red;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.nav-button {
+    background: var(--white);
+    color: var(--green1);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: var(--shadow1);
+}
+
+#prevBtn {
+    z-index: 1000;
+    left: -30px;
+    display: none;
+}
+
+#nextBtn {
+    right: -30px;
+}
+
+/* Product */
+#product1{
+    text-align: center;
+}
+
+#product1 h2{
+    font-size: var(--fontsize3);
+}
+
+#product1 p{
+    font-size: var(--fontsize7);
+}
+
+.product1-container {
+    display: flex;
+    gap: 30px;
+    margin: 50px;
+    padding: 0 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product-card1 {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.product-card1:hover {
+    transform: scale(1.05);
+}
+
+.product-image {
+    position: relative;
+}
+
+.product-image img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.favorite-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: gray;
+}
+
+.favorite-btn.active {
+    color: red;
+}
+
+.product1-info {
+    margin-top: 10px;
+}
+
+.price-cart{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #27ae60;
+}
+
+.cart-btn {
+    background: none;
+    border: 1px solid var(--green1);
+    font-size: 20px;
+    border-radius: var(--radius-circle);
+    cursor: pointer;
+    padding: 5px;
+    color: gray;
+}
+
+.cart-btn.active {
+    color: var(--green1);
+}
+
+/* Banner */
+.banner{
+    background: url(https://media.istockphoto.com/id/2156202669/id/foto/hari-lingkungan-hidup-sedunia-kerjasama-bisnis-perusahaan-dan-masyarakat-untuk-tujuan.jpg?s=612x612&w=0&k=20&c=ZWn-JWUf4TZCOazgIz9ytFfTeJ1wl8QT-Oj300zBvqw=);
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-container{
+    display: flex;
+    flex-direction:row;
+    padding: 40px 5rem;
+    justify-content: start;
+    gap: 50px;
+}
+
+.illustration img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.banner-info{
+    color: white;
+    font-size: var(--fontsize6);
+}
+
+.banner-info button{
+    padding: 15px;
+    width: 120px;
+    border-radius: var(--radius-24);
+}

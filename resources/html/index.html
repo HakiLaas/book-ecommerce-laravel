@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Econic</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header id="header">
+        <nav id="navbar" class="navbar">
+            <div class="logo">
+                <h2>Econic</h2>
+            </div>
+            <div class="search-bar" id="navSearch">
+                <input type="text" placeholder="Search for anything">
+                <i class='bx bx-search' ></i>
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#product1">Services</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Contact</a></li>
+            </ul>
+            <div class="icons">
+                <ul>
+
+                    <!-- Cart Dropdown -->
+                    <li class="dropdown">
+                        <a href="#"><i class='bx bx-cart'></i></a>
+                        <div class="dropdown-menu cart-menu">
+                            <h4>Shopping Cart</h4>
+                            <ul id="cart-items">
+                                <li>Cart is empty</li>
+                            </ul>
+                            <button class="checkout-btn">Checkout</button>
+                        </div>
+                    </li>
+                    
+                    <!-- Favorite Dropdown -->
+                    <li class="dropdown">
+                        <a href="#"><i class='bx bx-heart'></i></a>
+                        <div class="dropdown-menu favorite-menu">
+                            <h4>Favorite Items</h4>
+                            <ul id="favorite-items">
+                                <li>No favorites yet</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <span>|</span>
+                <ul>
+                    <li><i class='bx bx-moon' id="theme"></i></li>
+                    <!-- <li><a href=""><i class='bx bx-user' id="user"></i>Sign In</a></li> -->
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="hero" style="background-color: var(--black); height: 85vh;">
+        <div class="hero-content">
+            <h1>Lorem ipsum dolor sit amet.</h1>    
+            <div class="bar-search" id="heroSearch">
+                <input type="text" placeholder="Search for products...">
+                <button class="search-btn" type="submit">Search</button>
+            </div>
+            <p>Lorem, ipsum: <span class="tag"><a href="">Lorem, ipsum dolor.</a></span> <span class="tag"><a href="">spider hoodie</a></span> <span class="tag"><a href="">electric scooter</a></span></p>
+        </div>
+    </section>
+    <section class="feature" style="background-color: var(--black); "    id="shop">
+        <div class="feature-container">
+            <div class="feature-card">
+                <div class="icon"><i class='bx bx-check-shield'></i></div>
+                <p>Millions of Business Offerings</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon"><i class='bx bx-package'></i></div>
+                <p>Assured Quality and Transactions</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon"><i class='bx bxs-discount'></i></div>
+                <p>One-Stop Trading Solution</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon"><i class='bx bx-target-lock'></i></div>
+                <p>Tailored Trading Experience</p>
+            </div>
+            <div class="next-section">
+                <a href="#product1"><i class='bx bx-chevron-down'></i></a>
+            </div>
+    </section>
+    <section class="promotion-product" id="shop" style="height: 55vh;">
+        <h1><span>Products</span></h1>
+        <div class="product-slider">
+            <button id="prevBtn" class="nav-button"><i class='bx bx-chevron-left'></i></button>
+            <div class="product-container">
+                <div class="product-card">
+                    <div class="favorite-icon">&#10084;</div>
+                        <img src="/Aset/Products/pants1.png" alt="Produk 1">
+                        <div class="product-info">
+                            <h4>Describe</h4>
+                            <h3>Produk A</h3>
+                            <p class="price"><span class="old-price">Rp 150.000</span> Rp 100.000</p>
+                            <p class="discount">Diskon 30%</p>  
+                    </div>
+                </div>
+                <div class="product-card">Produk 2</div>
+                <div class="product-card">Produk 3</div>
+                <div class="product-card">Produk 4</div>
+                <div class="product-card">Produk 5</div>
+                <div class="product-card">Produk 6</div>
+                <div class="product-card">Produk 2</div>
+                <div class="product-card">Produk 3</div>
+                <div class="product-card">Produk 4</div>
+                <div class="product-card">Produk 5</div>
+                <div class="product-card">Produk 6</div>
+            </div>
+            <button id="nextBtn" class="nav-button"><i class='bx bx-chevron-right'></i></button>
+        </div>
+    </section>
+    <section id="product1" style="background-color: var(--white); height: 110vh; padding: 55px 0;">
+        <h2>Feature Product</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+        <div class="product1-container">
+            <div class="product-card1">
+                <div class="product-image">
+                    <img src="/Aset/Products/pants1.png" alt="Cartoon Astronaut T-Shirt">
+                    <button class="favorite-btn">❤️</button>
+                </div>
+                <div class="product1-info">
+                    <span class="brand">adidas</span>
+                    <h3>Cartoon Astronaut T-Shirts</h3>
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+                    <div class="price-cart">
+                        <span class="price">$78</span>
+                        <button class="cart-btn">🛒</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card1">
+                <div class="product-image">
+                    <img src="/Aset/Products/pants1.png" alt="Cartoon Astronaut T-Shirt">
+                    <button class="favorite-btn">❤️</button>
+                </div>
+                <div class="product1-info">
+                    <span class="brand">adidas</span>
+                    <h3>Cartoon Astronaut T-Shirts</h3>
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+                    <div class="price-cart">
+                        <span class="price">$78</span>
+                        <button class="cart-btn">🛒</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card1">
+                <div class="product-image">
+                    <img src="/Aset/Products/pants1.png" alt="Cartoon Astronaut T-Shirt">
+                    <button class="favorite-btn">❤️</button>
+                </div>
+                <div class="product1-info">
+                    <span class="brand">adidas</span>
+                    <h3>Cartoon Astronaut T-Shirts</h3>
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+                    <div class="price-cart">
+                        <span class="price">$78</span>
+                        <button class="cart-btn">🛒</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card1">
+                <div class="product-image">
+                    <img src="/Aset/Products/pants1.png" alt="Cartoon Astronaut T-Shirt">
+                    <button class="favorite-btn">❤️</button>
+                </div>
+                <div class="product1-info">
+                    <span class="brand">adidas</span>
+                    <h3>Cartoon Astronaut T-Shirts</h3>
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+                    <div class="price-cart">
+                        <span class="price">$78</span>
+                        <button class="cart-btn">🛒</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card1">
+                <div class="product-image">
+                    <img src="/Aset/Products/pants1.png" alt="Cartoon Astronaut T-Shirt">
+                    <button class="favorite-btn">❤️</button>
+                </div>
+                <div class="product1-info">
+                    <span class="brand">adidas</span>
+                    <h3>Cartoon Astronaut T-Shirts</h3>
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+                    <div class="price-cart">
+                        <span class="price">$78</span>
+                        <button class="cart-btn">🛒</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card1">
+                <div class="product-image">
+                    <img src="/Aset/Products/pants1.png" alt="Cartoon Astronaut T-Shirt">
+                    <button class="favorite-btn">❤️</button>
+                </div>
+                <div class="product1-info">
+                    <span class="brand">adidas</span>
+                    <h3>Cartoon Astronaut T-Shirts</h3>
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+                    <div class="price-cart">
+                        <span class="price">$78</span>
+                        <button class="cart-btn">🛒</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card1">
+                <div class="product-image">
+                    <img src="/Aset/Products/pants1.png" alt="Cartoon Astronaut T-Shirt">
+                    <button class="favorite-btn">❤️</button>
+                </div>
+                <div class="product1-info">
+                    <span class="brand">adidas</span>
+                    <h3>Cartoon Astronaut T-Shirts</h3>
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+                    <div class="price-cart">
+                        <span class="price">$78</span>
+                        <button class="cart-btn">🛒</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card1">
+                <div class="product-image">
+                    <img src="/Aset/Products/pants1.png" alt="Cartoon Astronaut T-Shirt">
+                    <button class="favorite-btn">❤️</button>
+                </div>
+                <div class="product1-info">
+                    <span class="brand">adidas</span>
+                    <h3>Cartoon Astronaut T-Shirts</h3>
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+                    <div class="price-cart">
+                        <span class="price">$78</span>
+                        <button class="cart-btn">🛒</button>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="banner" id="banner" style="background-color: var(--green1); height: 40vh;">
+        <div class="banner-container">
+            <div class="illustration">
+                <img src="/Aset/Products/pants1.png" alt="Lorem">
+            </div>
+            <div class="banner-info">
+                <h1>Lorem ipsum dolor sit amet.</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <br>
+                <button>Learn More</button>
+            </div>
+        </div>
+    </section>
+    <section style="background-color: var(--black); height: 100vh;">
+        
+    </section>
+    <section style="background-color: var(--white); height: 100vh;">
+
+    </section>
+    <footer>
+        <section>
+
+        </section>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
