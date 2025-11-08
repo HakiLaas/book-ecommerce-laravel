@@ -129,12 +129,14 @@ Dokumen ini menjelaskan implementasi fitur-fitur baru yang telah ditambahkan ke 
 - `app/Models/Category.php` - Model untuk kategori buku
 - `app/Models/UserNotification.php` - Model untuk notifikasi user
 - `app/Models/TransactionStatusHistory.php` - Model untuk history perubahan status
+dll...
 
 ### 📦 Migrations
 - `2025_11_05_025129_create_categories_table.php` - Tabel categories
 - `2025_11_05_025323_add_category_id_to_books_table.php` - Kolom category_id di books
 - `2025_11_05_030121_create_transaction_status_history_table.php` - Tabel status history
 - `2025_11_05_030200_create_user_notifications_table.php` - Tabel user notifications
+dll...
 
 ### 📦 Seeders
 - `database/seeders/CategorySeeder.php` - Seeder untuk kategori default
@@ -284,6 +286,7 @@ Dokumen ini menjelaskan implementasi fitur-fitur baru yang telah ditambahkan ke 
 - `database/migrations/2025_11_05_025323_add_category_id_to_books_table.php`
 - `database/migrations/2025_11_05_030121_create_transaction_status_history_table.php`
 - `database/migrations/2025_11_05_030200_create_user_notifications_table.php`
+dll..
 
 ### ✅ File yang Diupdate
 - `app/Models/Book.php`
@@ -298,6 +301,7 @@ Dokumen ini menjelaskan implementasi fitur-fitur baru yang telah ditambahkan ke 
 - `resources/views/transactions/index.blade.php`
 - `resources/views/admin/notifications/index.blade.php`
 - `routes/web.php`
+dll..
 
 ---
 
