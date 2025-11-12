@@ -18,7 +18,7 @@ Sistem login ganda (User dan Admin) beserta dashboard yang berbeda telah berhasi
   - Validasi input dengan pesan error spesifik
   - Redirect otomatis ke Dashboard User setelah login berhasil
 
-#### B. Login Admin (`/admin/login`)
+<!-- #### B. Login Admin (`/admin/login`)
 - **UI Profesional**: Desain minimalis dengan tema gelap dan efek blur
 - **Keamanan Tambahan**:
   - CAPTCHA untuk mencegah brute force
@@ -28,7 +28,7 @@ Sistem login ganda (User dan Admin) beserta dashboard yang berbeda telah berhasi
 - **Fitur Tambahan**:
   - Auto-refresh CAPTCHA setiap 2 menit
   - Validasi CAPTCHA sebelum login
-  - Redirect otomatis ke Dashboard Admin
+  - Redirect otomatis ke Dashboard Admin -->
 
 ### 2. 🏠 Dashboard User (`/user/dashboard`)
 
@@ -80,11 +80,11 @@ Sistem login ganda (User dan Admin) beserta dashboard yang berbeda telah berhasi
 - **UserMiddleware**: Membatasi akses hanya untuk user
 - **Role-based Access Control**: Setiap route dilindungi sesuai role
 
-#### Keamanan:
+<!-- #### Keamanan:
 - CSRF protection aktif
 - Session management yang aman
 - Validasi input server-side dan client-side
-- Redirect otomatis berdasarkan role
+- Redirect otomatis berdasarkan role -->
 
 ### 5. 🖼️ Sistem Upload Cover Image
 
